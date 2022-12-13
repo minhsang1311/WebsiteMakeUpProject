@@ -81,6 +81,7 @@ body h2 {
     height: 50px;
     max-width: 936px;
     margin: 50px auto;
+    padding-left: 20px;
 }
 .gallery-text h2 {
     font-size: 50px;
@@ -148,19 +149,22 @@ h2 {
         --columns: 1;
     }
     .gallery-img {
-        --columns: 1;
+        --columns: 3;
     }
     .img img {
         width: 300px;
         object-fit: contain;
     }
-}
-@media screen and (max-width: 1200px) {
     .container button {
-        margin-top: 650px;
+        margin-top: 680px;
     }
 }
 @media screen and (max-width: 700px) {
+    .gallery-img {
+        --spacing: 10px;
+        width: 80%;
+        left: 10%;
+    }
     .container button {
         margin-top: 300px;
     }

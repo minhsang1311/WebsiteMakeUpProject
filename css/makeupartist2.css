@@ -102,6 +102,7 @@
     margin: auto;
     padding-top: 100px;
     padding-bottom: 200px;
+    padding-left: 20px;
 }
 .pricing-text h2 {
     font-size: 50px;
@@ -191,6 +192,7 @@
     height: 50px;
     max-width: 936px;
     margin: 50px auto;
+    padding-left: 20px;
 }
 .gallery-text h2 {
     font-size: 50px;
@@ -299,6 +301,7 @@ body h2 {
     margin: auto;
     padding-top: 100px;
     padding-bottom: 200px;
+    padding-left: 20px;
 }
 .service-text h2 {
     font-size: 50px;
@@ -331,29 +334,26 @@ h2 {
     background-color: antiquewhite !important;
     color: #c93e6a !important;
 }
-@media screen and (max-width: 1500px) {
-    .gallery-img {
-        --columns: 2;
-    }
-}
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
     .packages {
         --columns: 1;
     }
     .gallery-img {
-        --columns: 1;
+        --columns: 2;
+        padding-top: 100px;
     }
-}
-@media screen and (max-width: 1150px) {
     .introduce-img-small {
-        left: 10%;
-        padding-top: 450px;
-        width: 450px;
+        padding-top: 500px;
+        left: 17%;
     }
     .container button {
-        margin-top: 450px;
-        right: 0;
-        margin-right: 50px;
+        margin-top: 350px;
+    }
+}
+@media screen and (max-width: 985px) {
+    .container button {
+        margin-top: 400px;
+        margin-left: 450px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -361,11 +361,14 @@ h2 {
         flex-direction: column;
         padding-top: 300px;
         width: 40%;
-        left: 50%;
-        margin-right: 40px;
+        left: 48%;
+    }
+    .introduce-img-big {
+        box-shadow: -10px 10px #c93e6a;
     }
     .introduce-img-small img {
         margin-bottom: 40px;
+        box-shadow: -10px 10px #c93e6a;
     }
     .name_artist {
         height: 30px;
@@ -377,7 +380,20 @@ h2 {
     .container button {
         margin-top: 600px;
         left: 0;
-        right: 50%;
-        margin-left: 50px;
+        right: 60%;
+        margin-left: 30px;
+    }
+    .service-item-1, .service-item-2, .service-item-3, .service-item-4, .service-item-5, .service-item-6 {
+        width: 400px;
+    }
+    .item-text {
+        text-align: center;
+        height: 50px;
+        width: 350px;
+        margin: 200px 25px;
+    }
+    .item-text p {
+        margin-top: 15px;
+        font-size: 20px;
     }
 }

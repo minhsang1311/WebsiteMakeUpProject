@@ -9,8 +9,9 @@
 .artist-text {
     height: 50px;
     max-width: 936px;
-    margin: 50px auto;
+    margin: 100px auto;
     padding-top: 200px;
+    margin-left: 20px !important;
 }
 .artist-text h2 {
     font-size: 50px;
@@ -32,8 +33,6 @@ body h2 {
     position: relative;
     justify-content: space-between;
     text-align: center;
-    --columns: 2;
-    --spacing: 25px;
     margin: auto;
     padding-bottom: 100px;
 }
@@ -73,29 +72,85 @@ body h2 {
     background: white;
     text-decoration-line: none;
 }
-@media screen and (max-width: 4000px) {
-    .service-item {
-        --columns: 2;
+
+@media screen and (max-width: 1650px) {
+    .artist-items {
+        padding-top: 100px;
+    }
+    .artist-img {
+        width: 500px;
+    }
+    .artist-img img {
+        width: 500px;
+    }
+    .item-text {
+        width: 450px;
+        height: 60px;
+        margin: 430px 25px;
     }
 }
-@media screen and (max-width: 1023px) {
-    .service-item {
-        --columns: 1;
+@media screen and (max-width: 1350px) {
+    .artist-items {
+        padding-top: 100px;
     }
-}
-@media screen and (max-width: 700px) {
     .artist-img {
         width: 400px;
     }
     .artist-img img {
         width: 400px;
     }
-    .item-text p{
-        margin-top: 15px;
-        font-size: 25px;
+    .item-text {
+        width: 350px;
+        height: 60px;
+        margin: 330px 25px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .artist-items {
+        padding-top: 100px;
+    }
+    .artist-img {
+        width: 300px;
+    }
+    .artist-img img {
+        width: 300px;
+    }
+    .item-text {
+        width: 250px;
+        height: 60px;
+        margin: 230px 25px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .artist-items {
+        padding-top: 100px;
+        margin-right: 60px;
+    }
+    .artist-img {
+        width: 500px;
+    }
+    .artist-img img {
+        width: 500px;
+    }
+    .item-text {
+        width: 450px;
+        height: 60px;
+        margin: 430px 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .artist-items {
+        padding-top: 100px;
+    }
+    .artist-img {
+        width: 400px;
+    }
+    .artist-img img {
+        width: 400px;
     }
     .item-text {
         width: 350px;
-        margin: 300px 25px;
+        height: 60px;
+        margin: 330px 25px;
     }
 }

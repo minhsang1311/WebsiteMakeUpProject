@@ -9,6 +9,7 @@
     max-width: 936px;
     margin: 100px auto;
     padding-top: 25px;
+    padding-left: 20px;
 
 }
 .gallery-text h2 {
@@ -33,22 +34,18 @@
     flex-direction: column;
     width: calc(calc(100% / var(--columns)) - var(--spacing));
     margin-left: var(--spacing);
-    margin-bottom: var(--spacing);
 }
 h2 {
     color: #c93e6a !important;
 }
-.img img {
-    width: 400px;
-    object-fit: contain;
-}
-@media screen and (max-width: 1500px) {
+
+@media screen and (max-width: 1023px) {
     .gallery-img {
         --columns: 2;
     }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 700px) {
     .gallery-img {
-        --columns: 1;
+        --columns: 2;
     }
 }

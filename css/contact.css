@@ -85,13 +85,6 @@ form {
     .map-text {
         width: 100%;
     }
-    form {
-        position: absolute;
-        top: 1000px;
-        margin: auto;
-        left: 20%;
-        text-align: center;
-    }
     .booking {
         top: 90%;
         right: 5%;
