@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/makeupartist2.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/715b70c8dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/viewbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS6lGj7CsMDE5O9bMEf3I3anmfn34OBlA&callback=initMap&libraries=places"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>FlechazoMakeup</title>
+</head>
+<body>
+<header>
+    <div class="inner-header">
+        <div>
+            <a href="index.html"><img src="/img/logomakeup.png" class="logo"></a>
+        </div>
+        <div id="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="main-menu">
+                <li><a href="index.html" id="home">HOME</a> </li>
+                <li><a href="makeupartist1.html">ARTIST</a> </li>
+                <li><a href="service1.html">SERVICES</a> </li>
+                <li><a href="gallery.html">GALLERY</a> </li>
+                <li><a href="contact.html">CONTACTS</a> </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="menu2">
+    <nav>
+        <ul id="main-menu2">
+            <li><a href="index.html" id="home2">HOME</a> </li>
+            <li><a href="makeupartist1.html">ARTIST</a> </li>
+            <li><a href="service1.html">SERVICES</a> </li>
+            <li><a href="gallery.html">GALLERY</a> </li>
+            <li><a href="contact.html">CONTACTS</a> </li>
+        </ul>
+    </nav>
+</div>
+<div class="wrapper">
+    <div class="container">
+    <div class="introduce">
+        <h3>Makeup Artist</h3>
+        <h1>Makeup Artist 1</h1>
+        <p>Hello, I’am Belen Ava! I love people love to fell beautiful, which is the reason I’ve spent last 10 years engulfed in doing Makeup & Hair Stylist.</p></br>
+        <p>Makeup viverra tristique justo duis vitae diam neque nivamus aestan ateuene artines aringianu atelit finibus viverra nec lacus. Nedana theme erodino setlie suscipe no curabi elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen.</p>
+    </div>
+        <button onclick="changeArtist()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Book Now
+        </button>
+        <div class="introduce-img-big">
+            <div class="name_artist">
+                <p>Makeup Artist 1</p>
+            </div>
+            <img src="img/artist1.png">
+        </div>
+        <div class="introduce-img-small">
+            <img src="img/artist1_1.png">
+            <img src="img/artist1_2.png">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4>Input Your Information</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <span class="input-group-addon">+84</span>
+                        <input id="phone-number" type="text" class="form-control" name="phone number" placeholder="Phone number">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input class="form-control" type="text" id="location" placeholder="Your Address">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <select class="form-control" id="packages" aria-label=".form-select-lg example">
+                                <option selected>Packages</option>
+                                <option value="1">Wedding Package</option>
+                                <option value="2">Family Package</option>
+                                <option value="3">Demo Package</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="services" aria-label=".form-select-lg example">
+                                <option selected>Services</option>
+                                <option value="1">Bridal Make Up</option>
+                                <option value="2">Groom Make Up</option>
+                                <option value="3">Family Make Up</option>
+                                <option value="4">Hair Make Up</option>
+                                <option value="5">Nails Design</option>
+                                <option value="6">Children Make Up</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="artist" aria-label=".form-select-lg example" onchange="change(this)">
+                                <option value="0" selected >Artist</option>
+                                <option id="a1" value="1">Artist 1</option>
+                                <option id="a2" value="2">Artist 2</option>
+                                <option id="a3" value="3">Artist 3</option>
+                                <option id="a4" value="4">Artist 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input class="form-control" id="myID" placeholder="Choose Date" onchange="changeDate()">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-remove" onclick="removeDate()"></i></span>
+                    </div>
+                    <div class="input-group">
+                        <input class="form-control" id="hour" placeholder="Choose Hour" disabled>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default js-btn-step pull-left" data-orientation="cancel" data-dismiss="modal"></button>
+                <button onclick="send()" type="button" class="btn btn-success" data-orientation="complete">Complete</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="service">
+    <div class="service-text">
+        <p>What we do</p>
+        <h2>Service</h2>
+        <p>Our main services Bridal Makeup, Groom Makeup, Family Makeup, Hair styling, Nails design etc.</p>
+    </div>
+    <div class="service-item">
+        <div class="owl-carousel owl-theme">
+            <div class="service-item service-item-1">
+                <a href="service2.html" type="button" class="item-text"><p>Bridal Make Up</p></a>
+                <a href="service2.html"> <img src="img/bridalmakeup.png" alt="bridal make up"></a>
+            </div>
+            <div class="service-item service-item-2">
+                <a href="service2.html" type="button" class="item-text"><p>Groom Make Up</p></a>
+                <a href="service2.html"><img src="img/groommakeup.png" alt="groom make up"></a>
+            </div>
+            <div class="service-item service-item-3">
+                <a href="service2.html" type="button" class="item-text"><p>Family Make Up</p></a>
+                <a href="service2.html"><img src="img/familymakeup.png" alt="family make up"></a>
+            </div>
+            <div class="service-item service-item-4">
+                <a href="service2.html" type="button" class="item-text"><p>Hair Styling</p></a>
+                <a href="service2.html"><img src="img/hairstyling.png" alt="hair styling"></a>
+            </div>
+            <div class="service-item service-item-5">
+                <a href="service2.html" type="button" class="item-text"><p>Nails Design</p></a>
+                <a href="service2.html"><img src="img/naildesign.png" alt="nails design"></a>
+            </div>
+            <div class="service-item service-item-6">
+                <a href="service2.html" type="button" class="item-text"><p>Children Make Up</p></a>
+                <a href="service2.html"><img src="img/childrenmakeup.png" alt="children makeup"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pricing">
+    <div class="pricing-text">
+        <h2>Discount Packages</h2>
+    </div>
+    <div class="packages">
+        <div class="package">
+            <div class="package-tittle">
+                <p>Wedding Package</p>
+            </div>
+            <div class="price-package">
+                <h1>$1200</h1>
+            </div>
+            <div class="text-package">
+                <p>Groom Makeup</p>
+                <p>Bridal Makeup</p>
+                <p>Nail Makeup</p>
+                <p>Hair Makeup</p>
+                <p>Clothes</p>
+            </div>
+            <div class = "btn-pricing">
+                <a href="contact.html"> <button type="button" class="btn btn-default btn-lg">Book Now</button></a>
+            </div>
+        </div>
+        <div class="package">
+            <div class="package-tittle">
+                <p>Family Package</p>
+            </div>
+            <div class="price-package">
+                <h1>$1000</h1>
+            </div>
+            <div class="text-package">
+                <p>Face Makeup</p>
+                <p>Eye Makeup</p>
+                <p>Hair Makeup</p>
+                <p>Children Makeup</p>
+            </div>
+            <div class = "btn-pricing">
+                <a href="contact.html"> <button type="button" class="btn btn-default btn-lg">Book Now</button></a>
+            </div>
+        </div>
+        <div class="package">
+            <div class="package-tittle">
+                <p>Demo Package</p>
+            </div>
+            <div class="price-package">
+                <h1>$200</h1>
+            </div>
+            <div class="text-package">
+                <p>Demo Face Makeup </p>
+                <p>Demo Hair Makeup</p>
+            </div>
+            <div class = "btn-pricing">
+                <a href="contact.html"> <button type="button" class="btn btn-default btn-lg">Book Now</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gallery">
+    <div class="gallery-text">
+        <h2>Makeup Artist Demo</h2>
+    </div>
+    <div class="gallery-img">
+        <div class="img">
+            <a class="thumbnail"  href="img/hairstyling.png" title="1"><img src="img/hairstyling.png" class="img-fluid"></a>
+        </div>
+        <div class="img">
+            <a class="thumbnail"  href="img/naildesign.png" title="2"><img src="img/hairstyling.png" class="img-fluid"></a>
+        </div>
+        <div class="img">
+            <a class="thumbnail"  href="img/bridalmakeup.png" title="3"><img src="img/hairstyling.png" class="img-fluid"></a>
+        </div>
+        <div class="img">
+            <a class="thumbnail"  href="img/hairstyling.png" title="4"><img src="img/hairstyling.png" class="img-fluid"></a>
+        </div>
+        <div class="img">
+            <a class="thumbnail"  href="img/naildesign.png" title="5"><img src="img/hairstyling.png" class="img-fluid"></a>
+        </div>
+        <div class="img">
+            <a class="thumbnail"  href="img/bridalmakeup.png" title="6"><img src="img/hairstyling.png" class="img-fluid"></a>
+        </div>
+        <script src="js/jquery.viewbox.min.js"></script>
+        <script>
+            $(function(){
+
+                $('.thumbnail').viewbox();
+                $('.thumbnail-2').viewbox({fullscreenButton: true});
+
+                (function(){
+                    var vb = $('.popup-link').viewbox();
+                    $('.popup-open-button').click(function(){
+                        vb.trigger('viewbox.open');
+                    });
+                    $('.close-button').click(function(){
+                        vb.trigger('viewbox.close');
+                    });
+                })();
+
+            });
+        </script>
+    </div>
+</div>
+
+<div class="backtop">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
+<footer>
+    <div class="contactfooter">
+        <div class="phoneemail">
+            <p>Phone And Email</p>
+            <a href=”callto:0979934306″ target="_blank">0979 934 306</a> </br>
+            <a href="mailto:flechazo@gmail.com" target="_blank">flechazo@gmail.com</a>
+        </div>
+        <div class="address">
+            <p>Address</p>
+            <a href="https://goo.gl/maps/UeX4kU8MzMswsXRP7" target="_blank">8 Ton That Thuyet, Cau Giay, Ha Noi</a>
+        </div>
+        <div class="social">
+            <p>Social Media</p>
+            <a href="facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://www.tiktok.com/foryou?is_copy_url=1&is_from_webapp=v1" target="blank"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="js/slider.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/modal-steps.min.js"></script>
+<script src="js/booking.js"></script>
+<script>
+    $('#myModal').modalSteps();
+</script>
+<script>
+    $(document).ready(function (){
+        var autocomplete;
+        var id = 'location';
+
+        autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)),{
+            types:['geocode'],
+        })
+    });
+</script>
+<script>
+    flatpickr("#myID", {
+        minDate: "today",
+    });
+    flatpickr("#hour", {
+        noCalendar: true,
+        enableTime: true,
+        dateFormat: "H:i",
+    });
+    function changeArtist() {
+        document.getElementById("a1").selected = "true";
+        changeDate();
+        change();
+    }
+    function change(obj) {
+        var artist = document.getElementById('artist');
+        var obj = artist.value;
+        if (obj === '0'){
+            flatpickr("#myID", {
+                minDate: "today",
+            });}
+        else if (obj === '1'){
+            flatpickr("#myID", {
+                minDate: "today",
+                disable: [function (date) {return !(date.getDate() % 2)}],
+            });
+        } else if (obj === '2') {
+            flatpickr("#myID", {
+                minDate: "today",
+                disable: [function (date) {return !(date.getDate() % 3)}],
+            });}
+        else if (obj === '3') {
+            flatpickr("#myID", {
+                minDate: "today",
+                disable: [function (date) {return !(date.getDate() % 4)}],
+            });}
+        else if (obj === '4') {
+            flatpickr("#myID", {
+                minDate: "today",
+                disable: [function (date) {return !(date.getDate() % 5)}],
+            });
+        }}
+    function changeDate() {
+        const d = document.getElementById('myID').value;
+        const days = new Date(d);
+        let day = days.getDate();
+        if (day % 2 === 0) {
+            document.getElementById('a1').disabled = true;
+        } else {
+            document.getElementById('a1').disabled = false;
+        }
+        if (day % 3 === 0){
+            document.getElementById('a2').disabled = true;
+        } else {
+            document.getElementById('a2').disabled = false;
+        } if (day % 4 === 0){
+            document.getElementById('a3').disabled = true;
+        } else {
+            document.getElementById('a3').disabled = false;
+        } if (day % 5 === 0){
+            document.getElementById('a4').disabled = true;
+        } else {
+            document.getElementById('a4').disabled = false;
+        }
+        if (document.getElementById('myID').value !== "") {
+            document.getElementById('hour').disabled = false;
+        } else {
+            document.getElementById('hour').disabled = true;
+        }
+    }
+    function removeDate() {
+        document.getElementById('myID').value = "";
+        document.getElementById('hour').value = "";
+        removeEventListener(changeDate());
+    }
+</script>
+</body>
+</html>

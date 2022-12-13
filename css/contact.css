@@ -1,0 +1,99 @@
+* {
+    box-sizing:border-box
+}
+.booking {
+    position: absolute;
+    right: 20%;
+    top: 80%;
+}
+.container {
+    margin: 100px auto 200px auto;
+    width: 80% !important;
+    height: 1080px;
+    position: relative;
+}
+.map {
+    position: relative;
+    display: flex;
+    margin: auto;
+}
+iframe {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 650px;
+}
+.map-text {
+    display: flex;
+    height: 400px;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    top: 550px;
+}
+.map-text h1, .map-text h3 {
+    color: #c93e6a;
+}
+.container-address {
+    max-width: 400px;
+    text-align: left;
+    margin: auto;
+    text-decoration-line: none;
+}
+.container-address a {
+    color: black;
+    font-size: 15px;
+}
+.container-address a:hover {
+    text-decoration-line: none;
+}
+form {
+    font-family: Arial;
+}
+.input-group {
+    margin-bottom: 20px!important;
+}
+.row {
+    margin-bottom: 20px!important;
+}
+.modal-header {
+    background-color: #c93e6a;
+    color: white !important;
+}
+.modal-header button {
+    color: white !important;
+}
+.btn-success {
+    background-color: #c93e6a !important;
+    border: none !important;
+}
+.btn-success:hover {
+    background-color: antiquewhite !important;
+    color: #c93e6a !important;
+}
+.booking button {
+    background-color: #c93e6a !important;
+    color: white;
+    font-weight: bold!important;
+}
+.booking button:hover {
+    background-color: antiquewhite!important;
+    color: #c93e6a;
+}
+
+@media screen and (max-width: 1000px) {
+    .map-text {
+        width: 100%;
+    }
+    form {
+        position: absolute;
+        top: 1000px;
+        margin: auto;
+        left: 20%;
+        text-align: center;
+    }
+    .booking {
+        top: 90%;
+        right: 5%;
+    }
+}
