@@ -43,7 +43,7 @@
 }
 .introduce-img-big {
     width: 40%;
-    box-shadow: -20px 20px #c93e6a;
+    box-shadow: -10px 10px #c93e6a;
     right: 0%;
     margin-right: 40px;
     position: absolute;
@@ -87,12 +87,12 @@
 .introduce-img-small img {
     width: 200px;
     object-fit: contain;
-    box-shadow: -20px 20px #c93e6a;
+    box-shadow: -10px 10px #c93e6a;
     transition: all 0.3s ease-in-out;
 }
 .pricing {
     height: fit-content;
-    width: 100vw;
+    width: 100%;
     background: antiquewhite;
     position: relative;
 }
@@ -228,7 +228,7 @@ body h2 {
 }
 .service {
     height: 980px;
-    width: 100vw;
+    width: 100%;
     background: white;
     position: relative;
     display: block;
@@ -242,15 +242,22 @@ body h2 {
     width: 500px;
     height: auto;
     object-fit: contain;
-    transition: all 0.3s ease-in-out
 }
 .service-item-2{
     width: 500px;
     height: auto;
     object-fit: contain;
+}
+.item-text p{
+    font-family: Inter;
+    color: #c93e6a;
+    margin-top: 15px;
+    font-size: 25px;
+}
+.service-item img {
     transition: all 0.3s ease-in-out;
 }
-.service-item:hover {
+.service-item img:hover {
     transform: scale(1.1);
 }
 .item-text p{
@@ -266,8 +273,11 @@ body h2 {
     background: white;
     position: absolute;
     margin: 250px 25px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 .item-text:hover {
+    transform: translateY(-30px);
     background: antiquewhite;
     text-decoration-line: none;
 }

@@ -4,7 +4,7 @@
 
 .container {
     margin-top: 100px;
-    width: 100vw !important;
+    width: 100% !important;
     padding-right: 0px !important;
     padding-left: 0px !important;
     position: relative;
@@ -52,7 +52,7 @@ text-align: left !important;
 }
 .pricing {
     height: fit-content;
-    width: 100vw;
+    width: 100%;
     background: antiquewhite;
     position: relative;
 }
@@ -179,7 +179,7 @@ text-align: left !important;
 }
 .service {
     height: 980px;
-    width: 100vw;
+    width: 100%;
     background: white;
     position: relative;
     display: block;
@@ -193,15 +193,16 @@ text-align: left !important;
     width: 500px;
     height: auto;
     object-fit: contain;
-    transition: all 0.3s ease-in-out
 }
 .service-item-2{
    width: 500px;
     height: auto;
     object-fit: contain;
+}
+.service-item img {
     transition: all 0.3s ease-in-out;
 }
-.service-item:hover {
+.service-item img:hover {
     transform: scale(1.1);
 }
 .item-text p{
@@ -217,8 +218,11 @@ text-align: left !important;
     background: white;
     position: absolute;
     margin: 250px 25px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 .item-text:hover {
+    transform: translateY(-30px);
     background: antiquewhite;
     text-decoration-line: none;
 }
