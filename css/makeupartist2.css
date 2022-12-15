@@ -64,6 +64,12 @@
     margin-top: 85%;
     text-align: center;
 }
+.flatpickr-calendar.animate.arrowTop.arrowLeft.open {
+    top: 400px !important;
+}
+.flatpickr-calendar.hasTime.noCalendar.animate.arrowTop.arrowLeft.open {
+    top: 470px !important;
+}
 .name_artist p{
     margin-top: 10px;
     color: #c93e6a;

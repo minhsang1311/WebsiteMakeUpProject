@@ -80,6 +80,12 @@ form {
     background-color: antiquewhite!important;
     color: #c93e6a;
 }
+.flatpickr-calendar.animate.arrowTop.arrowLeft.open {
+    top: 400px !important;
+}
+.flatpickr-calendar.hasTime.noCalendar.animate.arrowTop.arrowLeft.open {
+    top: 470px !important;
+}
 
 @media screen and (max-width: 1000px) {
     .map-text {

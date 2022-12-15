@@ -135,6 +135,12 @@ h2 {
     background-color: antiquewhite !important;
     color: #c93e6a !important;
 }
+.flatpickr-calendar.animate.arrowTop.arrowLeft.open {
+    top: 400px !important;
+}
+.flatpickr-calendar.hasTime.noCalendar.animate.arrowTop.arrowLeft.open {
+    top: 470px !important;
+}
 @media screen and (max-width: 1500px) {
     .gallery-img {
         --columns: 3;

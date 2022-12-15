@@ -64,10 +64,13 @@
     position: absolute;
     background: white;
     margin: 200px 25px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 .item-text:hover {
     background: antiquewhite;
     text-decoration-line: none;
+    transform: translateY(-30px);
 }
 body h2 {
     font-weight: bold;
